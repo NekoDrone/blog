@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Sylfr Tan</title>
+        <title>Syl&apos;s Sanctuary</title>
       </head>
       <body className={`${lexend.className} antialiased`}>{children}</body>
     </html>
