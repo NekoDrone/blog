@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# [Blog Site](https://sylfr.dev)
 
-## Getting Started
+This repository contains everything for my blog site. It is a [NextJS](https://nextjs.org/) app that renders markdown into html in the `/blog` route using [`remark`](https://github.com/remarkjs/react-remark).
 
-First, run the development server:
+## Setup
+
+1. Clone this repository `git clone https://github.com/NekoDrone/blog.git`
+2. Enter the folder `blog`
+3. Install dependencies `pnpm i`
+4. Run the dev server `pnpm dev`
+5. Open the project in your browser http://localhost:3000
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+git clone https://github.com/NekoDrone/blog.git
+cd blog
+pnpm i
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This section is mostly for my own reminder as I suck at retaining information long-term \(Hello future me!\)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+For deploying, the project is currently running on [Vercel](https://vercel.com/). Visit your dashboard for more information on how to deploy future commits.
 
-## Learn More
+As of now, simply pushing to the repository should trigger a deployment run.
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is hosted at https://sylfr.dev/. Head there to see what I'm up to!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Routes
 
-## Deploy on Vercel
+- `/` is the root route which houses the landing page and portfolio section
+- `/blog` is where I post blog articles so that I can seem like a Real Professional™
+- Other routes may follow as I keep this site open for development purposes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Subdomains
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Subdomains of the site exist as well. You may use this section to see what other services are being hosted at the same domain.
+
+- [go.sylfr.dev](https://go.sylfr.dev/) is a link redirection service hosted at the same route. You can find the repository for that project [here](https://github.com/NekoDrone/go_syl_dev).
+  - [go.sylfr.dev/portfolio](https://go.sylfr.dev/portfolio) redirects to the main route.
+  - [go.sylfr.dev/blog](https://go.sylfr.dev/blog/) redirects to the blog route.
+
+## Contributing
+
+This project is provided as source-available. As such, the project is not looking for contributions. Thank you for your interest, and if you would like to contribute to an open-source project, I'd suggest checking out [Relictify](https://github.com/NekoDrone/relictify-app).
